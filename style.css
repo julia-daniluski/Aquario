@@ -136,3 +136,42 @@ img {
         /* define como primeiro item a aparecer */
         order: -1;
     }
+}
+
+/* Grid 2 - Colunas e navegação horizontal */
+
+.grid2 {
+    /* altera o tipo de display */
+    display: grid;
+    /* coluna lateral fixada em 200px */
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    /* limita o tamanho do container */
+    max-width: 800px;
+    /* margem */
+    padding: 10px;
+    /* alinha o container ao centro caso a tela seja maior que 800px */
+    margin: 0 auto;
+}
+  
+.sidebar > div {
+    margin-bottom: 10px;
+}
+  
+@media (max-width: 600px) {
+    .grid2 {
+    /* coloca tudo em uma coluna */
+      grid-template-columns: 1fr;
+    }
+    .sidebar {
+        /* deixa os itens lado a lado */
+      display: flex;
+      /* insere a navegação nas imagens */
+      overflow: scroll;
+    }
+    .sidebar > div {
+        /* não diminui o valor dos itens, mantem 200px */
+      flex: 1 0 200px;
+      margin: 0 10px;
+    }
+}
