@@ -4,6 +4,6 @@ Atvidade aquário é uma atividade exemplo para testarmos:
 
 * CSS
 
-* Flexbox (dentro do HTML
+* Flexbox
 
 * Responsividade
